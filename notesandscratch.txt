@@ -1,0 +1,26 @@
+
+
+
+
+if (cc >= 65 && cc <= 90) {
+    if ((ccn) > 97) {
+        var r = 97 - cc;
+        r += (ccn)%26;
+        else {
+            var r = cc
+        }
+    }
+            if ((ccn) > 90 && (cc + n < 97)) {   //uppercase input
+                var ccOut = (cc + n);
+                var newIndex = ((ccOut - 90) - 1);
+                cc = upperChar[newIndex];
+                output += String.fromCharCode(cc);
+            } else if ((cc + n) < 65) {
+                var ccOut = (cc + n); 
+                var newIndex = (26 - (65 - ccOut)); 
+                cc = upperChar[newIndex]; 
+                output += String.fromCharCode(cc);
+            } else {
+                output += String.fromCharCode(cc + n); 
+            }
+    }
